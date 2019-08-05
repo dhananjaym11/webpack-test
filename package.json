@@ -1,0 +1,19 @@
+{
+    "name": "webpack-guide",
+    "version": "1.0.0",
+    "description": "webpack 4 guide",
+    "main": "app.js",
+    "dependencies": {},
+    "devDependencies": {
+        "html-webpack-plugin": "^3.2.0",
+        "webpack": "^4.26.0",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.10"
+    },
+    "scripts": {
+        "build": "rm -rf ./dist/ && webpack --mode production --config webpack.config.js",
+        "dev": "webpack-dev-server --mode development --config webpack.config.js"
+    },
+    "author": "John Doe",
+    "license": "ISC"
+}
