@@ -46,12 +46,17 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader', 
-          'sass-loader',
         ]
       }
     ]
   },
   resolve: {
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@css': path.resolve(__dirname, 'src/css'),
+      '@img': path.resolve(__dirname, 'src/img'),
+      '@': path.resolve(__dirname, 'src')
+    },
     modules: [
       'node_modules',
       path.resolve(__dirname, 'src')

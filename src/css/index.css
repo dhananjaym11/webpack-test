@@ -10,7 +10,7 @@ html {
 
 body {
   align-items: center;
-  /* background: transparent url(../img/webpack-logo.png); */
+  background: transparent url(../img/webpack-logo.png);
   background-size: 200px 226px;
   display: flex;
   font-family: 'Source Sans Pro', sans-serif;

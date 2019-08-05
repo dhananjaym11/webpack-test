@@ -1,22 +1,18 @@
-class Container {
-    create(container) {
-      const div = document.createElement('div')
-      div.className = 'container'
-      container.appendChild(div) 
-      return div
-    }
-  }
+import '@css/index.css'
 
-class Header {
-    create(container, headerText) {
-      const h1 = document.createElement('h1')
-      h1.innerText = headerText
-      h1.className = 'header'
-      container.appendChild(h1)
-    }
-}
-const container = new Container();
-const el = container.create(document.body);
+import { 
+  header, 
+  text, 
+  image, 
+  link, 
+  container
+} from '@components'
 
-const header = new Header();
-header.create(el, 'Setting up webpack 4');
+import nodejsLogo from '@img/nodejs.png'
+
+const el = container.create(document.body)
+
+header.create(el, 'Setting up webpack 4')
+text.create(el, 'This is the demo app for the webpack 4 tutorial.')
+link.create(el, 'Read more at Auralinna.blog', 'https://auralinna.blog/post/2018/setting-up-webpack-4-for-a-project?utm_source=demo-app')
+image.create(el, nodejsLogo, 'https://nodejs.org/en/')
